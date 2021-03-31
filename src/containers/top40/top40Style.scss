@@ -4,16 +4,45 @@
 .top-40-outer{
   border:1px solid blue;
   .top-40-text{
-      border:1px solid red;
       color:$altText;
       text-align: center;
   }
 
   .top-40-all{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap:.4em;
     border:1px solid red;
-    height:300px;
+    width:100%;
+    .top-40-banner-wrap{
+      box-sizing: border-box;
+      grid-column: 1/3;
+      grid-row:1;
+      .banner-image{
+        box-sizing: border-box;
+        width:100%;
+        height:auto;
+      }
+    }
+    .top-40-brand{
+      box-sizing: border-box;
+      width:100%;
+      margin:0;
+    }
   }
 
+}
+
+
+@media screen and (min-width: 801px){
+  .top-40-outer{
+    .top-40-all{
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: 20px;
+    }
+    .top-40-banner-wrap{
+      grid-row: 4fr;
+    }
+  }
 }

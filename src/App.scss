@@ -6,6 +6,13 @@ $maintext:#1f397f;
 
 $altText:#444;
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 
 h1{
   color:$maintext;
