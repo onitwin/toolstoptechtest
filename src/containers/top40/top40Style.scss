@@ -1,0 +1,20 @@
+@import "../../App.scss";
+
+
+.top-40-outer{
+  border:1px solid blue;
+  .top-40-text{
+      border:1px solid red;
+      color:$altText;
+      text-align: center;
+  }
+
+  .top-40-all{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border:1px solid red;
+    width:100%;
+    height:300px;
+  }
+
+}
