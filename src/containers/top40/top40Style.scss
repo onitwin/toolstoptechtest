@@ -2,7 +2,6 @@
 
 
 .top-40-outer{
-  border:1px solid blue;
   .top-40-text{
       color:$altText;
       text-align: center;
@@ -13,22 +12,17 @@
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
     gap:.4em;
-    border:1px solid red;
     width:100%;
     .top-40-banner-wrap{
-      box-sizing: border-box;
       grid-column: 1/3;
       grid-row:1;
       .banner-image{
-        box-sizing: border-box;
         width:100%;
         height:auto;
       }
     }
     .top-40-brand{
-      box-sizing: border-box;
       width:100%;
-      margin:0;
     }
   }
 
@@ -37,12 +31,17 @@
 
 @media screen and (min-width: 801px){
   .top-40-outer{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
     .top-40-all{
       grid-template-columns: repeat(4,1fr);
-      grid-template-rows: 20px;
-    }
-    .top-40-banner-wrap{
-      grid-row: 4fr;
+      // grid-template-rows: 20px;
+      .top-40-banner-wrap{
+        grid-column: 1/5;
+        grid-row:1;
+      }
     }
   }
 }
