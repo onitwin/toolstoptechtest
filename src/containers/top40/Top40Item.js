@@ -7,7 +7,7 @@ const Top40Item=({brand})=>{
 
   return(
     <div>
-   <a href="www.placeholder.co.uk">
+   <a href="http://www.josephsutherland.co.uk">
     <img className="top-40-brand" src={newSrc} alt={brand}/>
     </a>
     </div>
