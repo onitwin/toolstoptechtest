@@ -1,20 +1,25 @@
 import React from 'react';
 import "./top40Style.scss"
+import Top40Item from "./Top40Item";
 
 const Top40Grid=()=>{
+
+  const brandlist=[{brandName:"makita"},{brandName:"dewalt"},{brandName:"hikoki"},
+{brandName:"bosch"},{brandName:"bahco"},{brandName:"metabo"},{brandName:"stanley"},
+{brandName:"evolution"}]; //added array as very quick and easy to add and renmove new products
+
+const brandrender=brandlist.map((item,index)=>{
+  return <Top40Item key={index} brand={item.brandName}/>
+})
+
   return(
   <div className="top-40-all">
   <div className="top-40-banner-wrap">
-  <img className="banner-image" src="./top-40-banner.webp"/>
+  <a href="placeholder.co.uk">
+  <img className="banner-image" src="./top-40-banner.webp" alt="top-40"/>
+  </a>
   </div>
-  <img className="top-40-brand" src="./top-20-logos-makita-1.webp"/>
-  <img className="top-40-brand" src="./top-20-logos-dewalt-1.webp"/>
-  <img className="top-40-brand" src="./top-20-logos-hikoki-1.webp"/>
-  <img className="top-40-brand" src="./top-20-logos-bosch-1.webp"/>
-  <img className="top-40-brand" src="./top-20-logos-bahco-1.webp"/>
-  <img className="top-40-brand" src="./top-20-logos-metabo-1.webp"/>
-  <img className="top-40-brand" src="./top-20-logos-stanley-1.webp"/>
-  <img className="top-40-brand" src="./top-20-logos-evolution-1.webp"/>
+  {brandrender}
 
   </div>
 )

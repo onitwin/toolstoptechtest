@@ -8,7 +8,7 @@ const PageHeader=()=>{
 
   return(
     <div className="logo-container">
-    <img className="toolstop-logo" src="./toolstop-logo.svg"/>
+    <img className="toolstop-logo" src="./toolstop-logo.svg" alt="toolstop logo"/>
     </div>
   )
 }
