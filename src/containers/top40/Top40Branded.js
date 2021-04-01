@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import ErrorPage from "../errors/ErrorPage";
+import BrandedItem from './BrandedItem';
 
 
 const Top40Branded=({brand})=>{
@@ -7,12 +8,17 @@ const Top40Branded=({brand})=>{
   const [brands,setBrands]=useState([]);
   const [error,setError]=useState(false);
 
+  const itemsList=brands.map((item)=>{
+    console.log(item)
+    return <BrandedItem key={item.id} item={item}/>
+  })
+
 
     function fetchfunction(brand){
     const url=`https://product-fetch-toolstop.herokuapp.com/top40/${brand}`;
     fetch(url)
     .then(data=>data.json())
-    .then((data)=>setBrands(data))
+    .then((data)=>setBrands(data.data))
     .catch((err)=>setError(true))
   }
 
@@ -29,7 +35,9 @@ const Top40Branded=({brand})=>{
 
 
     return(
-      <h1>The passed in brand for the fetch is {brand}</h1>
+      <ul className="branded-items-container">
+      {itemsList}
+      </ul>
     )
 
 
