@@ -3,6 +3,7 @@ import './top40Style.scss';
 import Top40Header from './Top40Header';
 import Top40Grid from './Top40Grid';
 import Top40Branded from './Top40Branded';
+import ErrorPage from '../errors/ErrorPage';
 import { BrowserRouter as Router,Route ,Switch} from "react-router-dom";
 
 
@@ -18,11 +19,12 @@ const Top40Container=()=>{
     <Route exact path="/top-40-all" render={(props)=>{
       return <Top40Branded brand=""/>
     }}/>
-    
+
     <Route exact path="/:id" render={(props)=>{
       const brand=props.match.params.id;
       return <Top40Branded brand={brand}/>
     }}/>
+    <Route component={ErrorPage}/>
     </Switch>
     </Router>
     </div>

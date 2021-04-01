@@ -1,9 +1,11 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect} from 'react';
+import ErrorPage from "../errors/ErrorPage";
 
 
 const Top40Branded=({brand})=>{
 
   const [brands,setBrands]=useState([]);
+  const [error,setError]=useState(false);
 
 
     function fetchfunction(brand){
@@ -11,19 +13,26 @@ const Top40Branded=({brand})=>{
     fetch(url)
     .then(data=>data.json())
     .then((data)=>setBrands(data))
+    .catch((err)=>setError(true))
   }
 
   useEffect(()=>{
     fetchfunction(brand)
-  })
+  },[])
 
 
 
-  return(
-    <div>
-    The passed in brand for the fetch is {brand}
-    </div>
-  )
+
+  if (brands.length===0){
+    return(<p>...Loading</p>)
+  }
+
+
+    return(
+      <h1>The passed in brand for the fetch is {brand}</h1>
+    )
+
+
+
 }
-
 export default Top40Branded;
