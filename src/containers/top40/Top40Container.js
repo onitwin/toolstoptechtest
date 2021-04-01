@@ -14,6 +14,11 @@ const Top40Container=()=>{
     <Top40Header/>
     <Switch>
     <Route exact path="/" component={Top40Grid}/>
+
+    <Route exact path="/top-40-all" render={(props)=>{
+      return <Top40Branded brand=""/>
+    }}/>
+    
     <Route exact path="/:id" render={(props)=>{
       const brand=props.match.params.id;
       return <Top40Branded brand={brand}/>

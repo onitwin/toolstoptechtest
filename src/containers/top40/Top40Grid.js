@@ -15,7 +15,7 @@ const brandrender=brandlist.map((item,index)=>{
   return(
   <div className="top-40-all">
   <div className="top-40-banner-wrap">
-  <a href="placeholder.co.uk">
+  <a href="/top-40-all">
   <img className="banner-image" src="./top-40-banner.webp" alt="top-40"/>
   </a>
   </div>
