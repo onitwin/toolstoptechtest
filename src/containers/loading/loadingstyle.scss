@@ -1,0 +1,27 @@
+@import '../../App.scss';
+
+  .loading-animation{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .sawblade-animation{
+      width:5rem;
+      height:5rem;
+      animation: rotate 3s linear 1000;
+    }
+    @keyframes rotate {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100%{
+    transform: rotateZ(360deg)
+  }
+}
+
+
+  }
