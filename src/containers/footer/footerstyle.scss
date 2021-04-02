@@ -2,10 +2,26 @@
 
 
 .footer-container{
-  position: fixed;
-  margin-top: auto;
-  bottom: 0;
-  background-color: silver;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: $maintext;
+  color: #fff;
   width:100%;
+  .footer-contents-wrapper{
+    display: flex;
+    width:80%;
+    .footer-column-wrapper{
+      width:25%;
+      display: block;
+      .footer-item{
+        list-style: none;
+      }
+    }
+
+    }
 
 }
