@@ -4,6 +4,7 @@ import Top40Header from './Top40Header';
 import Top40Grid from './Top40Grid';
 import Top40Branded from './Top40Branded';
 import ErrorPage from '../errors/ErrorPage';
+import PageHeader from "../header/PageHeader";
 import { BrowserRouter as Router,Route ,Switch} from "react-router-dom";
 
 
@@ -12,6 +13,7 @@ const Top40Container=()=>{
   return(
     <div className="top-40-outer">
     <Router>
+    <PageHeader/>
     <Top40Header/>
     <Switch>
     <Route exact path="/" component={Top40Grid}/>

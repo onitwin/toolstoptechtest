@@ -1,5 +1,6 @@
 import React from 'react';
 import "./headerstyle.scss"
+import {Link} from "react-router-dom"
 
 
 const PageHeader=()=>{
@@ -8,7 +9,7 @@ const PageHeader=()=>{
 
   return(
     <div className="logo-container">
-    <img className="toolstop-logo" src="./toolstop-logo.svg" alt="toolstop logo"/>
+    <Link to="/"><img className="toolstop-logo" src="./toolstop-logo.svg" alt="toolstop logo"/></Link>
     </div>
   )
 }
