@@ -5,6 +5,18 @@
   // border:3px solid red;
   .toolstop-logo{
     display:block;
+    margin-left: auto;
+    margin-right: auto;
     height:3rem;
   }
+}
+
+@media screen and (min-width: 801px){
+  .logo-container{
+    .toolstop-logo{
+      margin:unset;
+      margin-left: 5rem;
+    }
+  }
+
 }
