@@ -34,7 +34,3 @@ const Top40Container=()=>{
 }
 
 export default Top40Container;
-
-
-// <Route exact path ='/pirates/new' render={(props)=>{
-//         return <PirateForm ships ={this.state.ships} onCreate={this.handlePost}/>

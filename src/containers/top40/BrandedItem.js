@@ -4,10 +4,8 @@ import React from 'react'
 
 
 const BrandedItem=({item})=>{
-  console.log(item.name)
   const srcUrl=item.images[0].url_thumbnail;
   const toolstopUrl=`http://toolstop.co.uk${item.custom_url.url}`
-  console.log(toolstopUrl);
 
   return (
     <li className="branded-item-wrap">

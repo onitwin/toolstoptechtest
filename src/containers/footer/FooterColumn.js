@@ -6,7 +6,7 @@ const FooterColumn=({heading,text})=>{
 
   const textlist=text.map((t,index)=>{
     return(
-      <div>
+      <div className="item-container" key={index}>
       <li className="footer-item">{t}</li>
       <br/>
       </div>
