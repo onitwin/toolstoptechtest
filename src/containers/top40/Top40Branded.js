@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import ErrorPage from "../errors/ErrorPage";
 import BrandedItem from './BrandedItem';
+import LoadingScreen from '../loading/LoadingScreen'
 
 
 const Top40Branded=({brand})=>{
@@ -30,7 +31,7 @@ const Top40Branded=({brand})=>{
 
 
   if (brands.length===0){
-    return(<p>...Loading</p>)
+    return(<LoadingScreen/>)
   }
 
 
@@ -39,7 +40,6 @@ const Top40Branded=({brand})=>{
       {itemsList}
       </ul>
     )
-
 
 
 }
