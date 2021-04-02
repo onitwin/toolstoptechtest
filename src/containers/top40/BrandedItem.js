@@ -13,7 +13,7 @@ const BrandedItem=({item})=>{
     <li className="branded-item-wrap">
     <a href={toolstopUrl}>
     <article className="item-body">
-    <img className="item-image" src={srcUrl}/>
+    <img className="item-image" src={srcUrl} alt={item.name}/>
     {item.name}
     <h1 className="vat-label">£{(item.price*1.20).toFixed(2)}</h1>
     <p className="ex-vat-label">£{item.price} Ex VAT</p>
