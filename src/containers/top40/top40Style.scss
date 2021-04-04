@@ -43,18 +43,16 @@
     grid-template-columns: repeat(2,1fr);
     column-gap: 1rem;
     row-gap: 1rem;
-    // width:70%;
-    // border:1px solid blue;
     text-align: center;
+    width:90%;
+    padding: 0;
 
     .branded-item-wrap {
       border: 1px solid $boxBorder;
-      list-style: none;
-
+      list-style:none;
       .item-body {
         .item-image {
           width: 100%;
-
         }
         .item-name-wrap{
           display: block;
@@ -68,10 +66,8 @@
       }
 
       .vat-label {
-        padding: 0;
-        margin-top: .5rem;;
+        margin-top: .5rem;
         margin-bottom: 0;
-        font-family: "Open Sans",Arial,Helvetica,sans-serif;
       }
 
       .ex-vat-label {
@@ -80,7 +76,6 @@
         margin-top: 0;
         font-weight: lighter;
         color: $maintext;
-        font-family: "Open Sans",Arial,Helvetica,sans-serif;
       }
     }
 
@@ -98,7 +93,6 @@
 
     .top-40-all {
       grid-template-columns: repeat(4,1fr);
-      // grid-template-rows: 20px;
       .top-40-banner-wrap {
         grid-column: 1/5;
         grid-row: 1;

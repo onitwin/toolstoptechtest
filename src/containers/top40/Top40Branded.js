@@ -7,9 +7,7 @@ import BrandedItem from './BrandedItem';
 import LoadingScreen from '../loading/LoadingScreen'
 
 
-const Top40Branded = ({
-  brand
-}) => {
+const Top40Branded = ({brand}) => {
 
   const [brands, setBrands] = useState([]);
   const [error, setError] = useState(false);
@@ -47,7 +45,7 @@ const Top40Branded = ({
   if (error === true) {
     return ( < ErrorPage / > )
   }
-  
+
 
 
   return ( <
