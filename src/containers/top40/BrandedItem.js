@@ -2,6 +2,9 @@ import React from 'react'
 
 
 
+//CHILD OF <Top40Branded>
+//individual instance of a given product
+
 
 const BrandedItem=({item})=>{
   const srcUrl=item.images[0].url_thumbnail;

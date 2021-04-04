@@ -1,7 +1,8 @@
 import React from 'react'
 import './errorpagestyle.scss';
 
-
+//error page renders if no data pulled from API (after delay)
+//or incorrect url entered
 
 const ErrorPage=()=>{
 

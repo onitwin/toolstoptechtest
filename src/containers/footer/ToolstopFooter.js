@@ -2,6 +2,8 @@ import React from 'react';
 import './footerstyle.scss';
 import FooterColumn from './FooterColumn';
 
+//CHILD OF <MainContainer>
+//contains (currently) 4 <FooterColumn> elements of variable data
 
 const ToolstopFooter=()=>{
   //dummy data for populating footer columns

@@ -2,7 +2,7 @@ import React from 'react';
 import "./loadingstyle.scss";
 
 
-
+//renders while API is fetching
 const LoadingScreen=()=>{
 
   return(

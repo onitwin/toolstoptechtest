@@ -6,6 +6,9 @@ import ErrorPage from "../errors/ErrorPage";
 import BrandedItem from './BrandedItem';
 import LoadingScreen from '../loading/LoadingScreen'
 
+//CHILD OF <Top40Routes>
+//returns list of <BrandedItem> - individual products of a given brand
+//achived via fetch using data parsed from URL
 
 const Top40Branded = ({brand}) => {
 

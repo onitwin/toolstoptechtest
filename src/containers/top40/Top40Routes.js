@@ -8,7 +8,11 @@ import PageHeader from "../header/PageHeader";
 import { BrowserRouter as Router,Route ,Switch} from "react-router-dom";
 
 
-const Top40Container=()=>{
+//CHILD OF <MainContainer>
+//returns routes based on URL inputs
+//Main routes are <Top40Grid> (logos with brand links) and <Top40Branded>(individual brand page)
+
+const Top40Routes=()=>{
 
   return(
     <div className="top-40-outer">
@@ -33,4 +37,4 @@ const Top40Container=()=>{
   )
 }
 
-export default Top40Container;
+export default Top40Routes;

@@ -1,6 +1,8 @@
 import React from 'react'
 
-
+//CHILD OF <ToolstopFooter>
+//rendered across all pages
+//returns column of data (dummy data in this case)
 
 const FooterColumn=({heading,text})=>{
 
